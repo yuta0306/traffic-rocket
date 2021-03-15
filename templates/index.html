@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <title>Traffic Rocket</title>
+</head>
+<body ontouchstart="">
+    <div class="main">
+        <h1 class="title">Traffic Rocket</h1>
+        <div class="wrapper">
+            <form action="/login" method="POST">
+                <h2>Twitterでログインする</h2>
+                <input type="submit" value="ログイン" name="login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

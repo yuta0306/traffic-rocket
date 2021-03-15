@@ -1,0 +1,7 @@
+.vscode
+__pycache__
+.heroku
+.heroku/*
+.gitconfig
+.profile.d
+.profile.d/*
