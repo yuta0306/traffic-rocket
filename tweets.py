@@ -12,7 +12,7 @@ def _fetch_source(url: str) -> BeautifulSoup:
 
 def _parse_desc(source: BeautifulSoup) -> str:
     metas = source.find_all('meta')
-    desc = [meta.attrs['content'] for meta in metas if 'name' in meta.attrs.keys() and meta.attrs['name'] == 'description'] or None
+    desc = [meta.attrs['content'] for meta in metas if 'name' in meta.attrs.keys() and meta.attrs['name'] == 'og:description'] or None
     if desc:
         desc = desc[0]
     else:
